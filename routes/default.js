@@ -1,4 +1,5 @@
 const dataCenterRouter = require('./datacenter');
+const serverRouter = require('./server');
 const defaultRouter = require('koa-router')({
     prefix: '/api'
 });
@@ -10,6 +11,7 @@ defaultRouter.get('/', ctx => {
 
 defaultRouter.use(
     dataCenterRouter.routes()
+    serverRouter.routes()
 );
 
 module.exports = api => {

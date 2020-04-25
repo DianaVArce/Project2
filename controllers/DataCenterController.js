@@ -3,7 +3,7 @@ const chpConnection = require('../database/CHPConnection');
 // Controller that interacts with database to retrieve data.
 class DataCenterController {
     constructor() {
-        console.log('DataCenter Controller Initialized!');
+	console.log('DataCenter Controller Initialized!');
     }
     
     // Fetches all Data Centers

@@ -26,7 +26,7 @@ CURL COMMANDS ADDING A BRAND NEW ENTITY:
 		- Adds a new author!
 	curl -X POST -H 'Content-Type: application/json' -d '{"Title":"The Lost Princess","datePublished":"2007-08-10","totalPageCount":"120","publisher":"Self","author":"Ace Styles","SeriesName":"Super Kids Chronicles"}' http://localhost:8005/api/Book
 		-Adds a new Book!
-	curl -X POST -H 'Content-Type: application/json' -d '{"Series_name":"Super Kids Chronciles","first_Book":"The Lost Princess","uniqueSeriesID":"6710"}' http://localhost:8005/api/Series
+	curl -X POST -H 'Content-Type: application/json' -d '{"Series_name":"Super Kids Chronicles","first_Book":"The Lost Princess","uniqueSeriesID":"6710"}' http://localhost:8005/api/Series
 		-Adds a new Series
 	curl -X POST -H 'Content-Type: application/json' -d '{"genreType":"Fantasy and Romance","uniqueGenreID":"5007"}' http://localhost:8005/api/Genre
 		- Adds a new Genre

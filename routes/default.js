@@ -1,5 +1,10 @@
-const dataCenterRouter = require('./datacenter');
-const serverRouter = require('./server');
+const AuthorsRouter = require('./Authors');
+const BookRouter = require('./Book');
+const SeriesRouter = require('./Series');
+const PublisherRouter = require('./Publisher');
+const GenreRouter = require('./Genre');
+const BookViewRouter = require('./BookView');
+
 const defaultRouter = require('koa-router')({
     prefix: '/api'
 });
@@ -10,10 +15,15 @@ defaultRouter.get('/', ctx => {
 });
 
 defaultRouter.use(
-    dataCenterRouter.routes()
-    serverRouter.routes()
+  AuthorsRouter.routes(),
+	BookRouter.routes(),
+	SeriesRouter.routes(),
+	PublisherRouter.routes(),
+	GenreRouter.routes(),
+ BookViewRouter.routes()
 );
 
 module.exports = api => {
     api.use(defaultRouter.routes());
 };
+

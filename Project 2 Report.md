@@ -21,7 +21,7 @@ CURL COMMANDS For Returning a SINGLE Entity from a Table in Database:
 		Returns a single series named Warriors
 
 CURL COMMANDS FOR ADDING A NEW ENTITY TO A TABLE IN DATABSE:
-	curl -X POST -H 'Content-Type: application/json' -d '{"name":"Ace Styles","description":"Author of SK","uniqueID":"6710"}' http://localhost:8005/api/Authors
+	curl -X POST -H 'Content-Type: application/json' -d '{"name":"Ace Styles","description":"Author of SK","uniqueID":"6710"}' 		http://localhost:8005/api/Authors
 		- Adds a new author!
 	curl -X POST -H 'Content-Type: application/json' -d '{"Title":"The Lost Princess","datePublished":"2007-08-10","totalPageCount":"120","publisher":"Self","author":"Ace Styles","SeriesName":"Super Kids Chronicles"}' http://localhost:8005/api/Book
 		-Adds a new Book!
@@ -32,9 +32,10 @@ CURL COMMANDS FOR ADDING A NEW ENTITY TO A TABLE IN DATABSE:
 	curl -X POST -H 'Content-Type: application/json' -d '{"publisherName":"Self","uniquePubID":"6710"}' http://locahost:8005/api/Publisher
 		- Adds a new Publisher!
 
-CURL COMMANDS FOR DELETING AN ENTITY TO A TABLE IN DATABASE (in this case, the one that was ADDED earlier):
+CURL COMMANDS For DELETING a SINGLE Entity from a Table in Database :
+
 	curl -X DELETE http://localhost:8005/api/Authors/Ace%Styles
-		- Deletes the author name Ace Styles
+		Returns Single Author who’s name is Erin Hunter
 	curl -X DELETE http://localhost:8005/api/Book/The%Lost%Princess
 		- Deletes the Book named The Lost Princess
 	curl-X DELETE http://localhost:8005/api/Series/Super%Kids%Chronicles

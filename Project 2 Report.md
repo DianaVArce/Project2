@@ -22,7 +22,7 @@ CURL COMMANDS For Returning a SINGLE Entity from a Table in Database:
 
 CURL COMMANDS ADDING A BRAND NEW ENTITY:
 
-	curl -X POST -H 'Content-Type: application/json' -d '{"name":"Ace Styles","description":"Author of SK","uniqueID":"6710"}' 		http://localhost:8005/api/Authors
+	curl -X POST -H 'Content-Type: application/json' -d '{"name":"Ace Styles","description":"Author of SK","uniqueID":"6710"}' http://localhost:8005/api/Authors
 		- Adds a new author!
 	curl -X POST -H 'Content-Type: application/json' -d '{"Title":"The Lost Princess","datePublished":"2007-08-10","totalPageCount":"120","publisher":"Self","author":"Ace Styles","SeriesName":"Super Kids Chronicles"}' http://localhost:8005/api/Book
 		-Adds a new Book!

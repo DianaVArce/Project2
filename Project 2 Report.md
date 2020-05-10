@@ -34,8 +34,8 @@ CURL COMMANDS ADDING A BRAND NEW ENTITY:
 		- Adds a new Publisher!
 
 
-CURL COMMAND For UPDATING an Entity from a Table in Database :
-	curl -X PUT -H 'Content-Type: application/json' -d '{"name":"Ace Styles","description":"Author of SK","uniqueID":"6710"}' http://localhost:8005/api/Authors
+CURL COMMAND For UPDATING an Entity from a Table in Database:
+	curl -X PUT -H 'Content-Type: application/json' -d '{"name":"Ace Styles","description":"Author of SK","uniqueID":"6710"}' 		http://localhost:8005/api/Authors
 
 
 CURL COMMANDS For DELETING a SINGLE Entity from a Table in Database :
